@@ -1,0 +1,563 @@
+
+/*	Animations
+------------------------------------------ */
+
+
+.sat {
+    -webkit-animation: sat-move 55s ease-in-out forwards,
+    sat-float 4s infinite;
+
+    -moz-animation: sat-move 55s ease-in-out forwards,
+    sat-float-moz 4s infinite;
+
+    animation: sat-move 55s ease-in-out forwards,
+    sat-float-moz 4s infinite;
+
+}
+
+
+.sat .bolt1 *
+{
+    -webkit-animation: bolt1-flash 8s 4000ms infinite;
+    /*-webkit-animation-timing-function: cubic-bezier(0,1,0,1);*/
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: bolt1-flash 8s 4000ms infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: bolt1-flash 8s 4000ms infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+
+}
+
+
+.sat .bolt2 *
+{
+    -webkit-animation: bolt2-flash 8s 4s infinite;
+    /*-webkit-animation-timing-function: cubic-bezier(0,1,0,1);*/
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: bolt2-flash 8s 4s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: bolt2-flash 8s 4s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+
+}
+
+.sat .bolt3 *
+{
+    -webkit-animation: bolt3-flash 8s 4s infinite;
+    /*-webkit-animation-timing-function: cubic-bezier(0,1,0,1);*/
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: bolt3-flash 8s 4s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: bolt3-flash 8s 4s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+}
+
+
+.sat #wave1,
+#colorball1
+{
+    -webkit-animation: wave1-flash 2s 5s infinite;
+    /*-webkit-animation-timing-function: cubic-bezier(0,1,0,1);*/
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: wave1-flash 2s 5s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: wave1-flash 2s 5s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+}
+
+.sat #wave2
+{
+    -webkit-animation: wave2-flash 2s 5s infinite;
+    /*-webkit-animation-timing-function: cubic-bezier(0,1,0,1);*/
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: wave2-flash 2s 5s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: wave2-flash 2s 5s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+}
+
+.sat #wave3
+{
+    -webkit-animation: wave3-flash 2s 5s infinite;
+    /*-webkit-animation-timing-function: cubic-bezier(0,1,0,1);*/
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: wave3-flash 2s 5s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: wave3-flash 2s 5s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+}
+
+
+
+
+#colorball2
+{
+    -webkit-animation: colorball2-flash 1s infinite;
+    -webkit-animation-timing-function: cubic-bezier(0,1,0,1);
+
+    -moz-animation: colorball2-flash 1s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,1,0,1);
+
+    animation: colorball2-flash 1s infinite;
+    animation-timing-function: cubic-bezier(0,1,0,1);
+}
+
+
+
+
+.bug .bubs *
+
+{
+    -webkit-animation: bub-flash 2s infinite;
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: bub-flash 2s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: bub-flash 2s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+}
+
+
+.app #gearset1
+
+{
+    -webkit-animation: gear1-flash 2s infinite;
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: gear1-flash 2s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: gear1-flash 2s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+}
+
+
+.app #gearset2
+
+{
+    -webkit-animation: gear2-flash 2s infinite;
+    -webkit-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    -moz-animation: gear2-flash 2s infinite;
+    -moz-animation-timing-function: cubic-bezier(0,10,0,10);
+
+    animation: gear2-flash 2s infinite;
+    animation-timing-function: cubic-bezier(0,10,0,10);
+}
+
+
+
+
+/*Wave*/
+
+#wavepic {
+    -webkit-animation: wave-move 13s 5s ease-in-out infinite;
+    -webkit-animation-timing-function: cubic-bezier(.51,.1,.74,1.89);
+
+    -moz-animation: wave-move 13s 5s ease-in-out infinite;
+    -moz-animation-timing-function: cubic-bezier(.51,.1,.74,1.89);
+
+    animation: wave-move 13s 5s ease-in-out infinite;
+    animation-timing-function: cubic-bezier(.51,.1,.74,1.89);
+
+
+}
+
+
+
+/*www dots*/
+
+
+#dot3
+{
+    -webkit-animation: dot3-flash 15s 4s infinite;
+    -moz-animation: dot3-flash 15s 4s infinite;
+    animation: dot3-flash 15s 4s infinite;
+}
+
+#dot2
+{
+    -webkit-animation: dot2-flash 15s 4s infinite;
+    -moz-animation: dot2-flash 15s 4s infinite;
+    animation: dot2-flash 15s 4s infinite;
+}
+
+#dot1
+{
+    -webkit-animation: dot1-flash 15s 4s infinite;
+    -moz-animation: dot1-flash 15s 4s infinite;
+    animation: dot1-flash 15s 4s infinite;
+}
+
+
+
+/*earth*/
+
+
+#earth {
+
+    -webkit-animation: earth-flash 15s 4s ease-in infinite;
+    -moz-animation: earth-flash 15s 4s ease-in infinite;
+    animation: earth-flash 15s 4s ease-in infinite;
+
+}
+
+
+
+
+/*	Keyframes
+------------------------------------------ */
+
+@-webkit-keyframes sat-move  {
+    /*50%  { -webkit-transform: rotate(-5deg) translateY(-10px); }*/
+    20% { left: 20%;}
+    40% { left: 40%;}
+    50% { left: 50%; }
+    80% { left: 80%; }
+    100%  { left: 65%; }
+}
+
+@keyframes sat-move  {
+
+    20% { left: 20%;}
+    40% { left: 40%;}
+    50% { left: 50%; }
+    80% { left: 80%; }
+    100%  { left: 65%; }
+}
+
+
+@-webkit-keyframes sat-float {
+    50% { -webkit-transform:  rotateZ(15deg) ; }
+}
+
+
+@keyframes sat-float-moz {
+    /*50% { transform: rotateZ(5deg) translateY(-15px); }*/
+    50% { transform:  rotateZ(15deg) ; }
+}
+
+
+
+@-webkit-keyframes bolt1-flash {
+
+    40% { visibility: hidden; }
+    50% { visibility: visible; }
+    80% { visibility: hidden;}
+    96% { visibility: visible;}
+
+}
+
+
+@keyframes bolt1-flash {
+
+    40% { visibility: hidden; }
+    50% { visibility: visible; }
+    80% { visibility: hidden;}
+    96% { visibility: visible;}
+}
+
+
+
+@-webkit-keyframes bolt2-flash {
+
+    41% { visibility: hidden; }
+    51% { visibility: visible; }
+    81% { visibility: hidden;}
+    97% { visibility: visible;}
+}
+
+
+@keyframes bolt2-flash {
+
+    41% { visibility: hidden; }
+    51% { visibility: visible; }
+    81% { visibility: hidden;}
+    97% { visibility: visible;}
+}
+
+
+@-webkit-keyframes bolt3-flash {
+
+
+    42% { visibility: hidden; }
+    52% { visibility: visible; }
+    82% { visibility: hidden;}
+    98% { visibility: visible;}
+}
+
+
+@keyframes bolt3-flash {
+
+    42% { visibility: hidden; }
+    52% { visibility: visible; }
+    82% { visibility: hidden;}
+    98% { visibility: visible;}
+}
+
+
+
+
+
+@-webkit-keyframes wave1-flash {
+
+    39% { visibility: hidden; }
+    49% { visibility: visible; }
+    79% { visibility: hidden;}
+    95% { visibility: visible;}
+}
+
+@keyframes wave1-flash {
+
+    39% { visibility: hidden; }
+    49% { visibility: visible; }
+    79% { visibility: hidden;}
+    95% { visibility: visible;}
+}
+
+
+
+@-webkit-keyframes wave2-flash {
+
+    42% { visibility: hidden; }
+    52% { visibility: visible; }
+    82% { visibility: hidden;}
+    98% { visibility: visible;}
+}
+
+@keyframes wave2-flash {
+
+    42% { visibility: hidden; }
+    52% { visibility: visible; }
+    82% { visibility: hidden;}
+    98% { visibility: visible;}
+}
+
+
+
+@-webkit-keyframes wave3-flash {
+
+    44% { visibility: hidden; }
+    54% { visibility: visible; }
+    84% { visibility: hidden;}
+    100% { visibility: visible;}
+}
+
+@keyframes wave3-flash {
+
+    44% { visibility: hidden; }
+    54% { visibility: visible; }
+    84% { visibility: hidden;}
+    100% { visibility: visible;}
+}
+
+
+
+
+@-webkit-keyframes colorball2-flash {
+
+    25% {  visibility: hidden; }
+    50% { visibility: visible; }
+
+}
+
+
+@keyframes colorball2-flash {
+
+    25% {  visibility: hidden; }
+    50% { visibility: visible; }
+
+}
+
+
+
+/*Flower Appear*/
+
+
+@-webkit-keyframes flower-appear
+{
+    1% {  visibility: visible;  }
+}
+
+@-moz-keyframes flower-appear-moz
+{
+    1% {  visibility: visible;  }
+}
+
+
+@keyframes flower-appear-ms  {
+    1% {  visibility: visible;  }
+}
+
+
+
+
+
+@-webkit-keyframes bub-flash {
+
+    40% { visibility: hidden; }
+    50% { visibility: visible; }
+    80% { visibility: hidden;}
+    96% { visibility: visible;}
+
+}
+
+
+@keyframes bub-flash {
+
+    40% { visibility: hidden; }
+    50% { visibility: visible; }
+    80% { visibility: hidden;}
+    96% { visibility: visible;}
+}
+
+
+
+@-webkit-keyframes gear1-flash {
+
+    50% { visibility: visible; }
+    100% { visibility: hidden;}
+
+}
+
+
+@keyframes gear1-flash {
+
+    50% { visibility: visible; }
+    100% { visibility: hidden;}
+}
+
+
+
+
+@-webkit-keyframes gear2-flash {
+
+    50% { visibility: hidden; }
+    100% { visibility: visible;}
+
+}
+
+
+@keyframes gear2-flash {
+
+    50% { visibility: hidden; }
+    100% { visibility: visible;}
+}
+
+
+
+
+/*Wave Move*/
+
+
+@-webkit-keyframes wave-move  {
+     100%  { right: 100%; }
+}
+
+@keyframes wave-move  {
+    100%  { right: 100%; }
+}
+
+
+
+
+/*dot-flash*/
+
+
+@-webkit-keyframes dot3-flash {
+    16% {visibility: hidden; z-index: -1;}
+    41% { visibility: visible;z-index: 100;}
+    97% { visibility: hidden;z-index: -1;}
+
+}
+
+@keyframes dot3-flash {
+
+    16% {visibility: hidden;z-index: -1;}
+    41% { visibility: visible;z-index: 100;}
+    97% { visibility: hidden;z-index: -1;}
+}
+
+
+@-webkit-keyframes dot2-flash {
+    22% {visibility: hidden;z-index: -1;}
+    47% { visibility: visible;z-index: 100;}
+    97% { visibility: hidden;z-index: -1;}
+}
+
+@keyframes dot2-flash {
+
+    22% {visibility: hidden;z-index: -1;}
+    47% { visibility: visible;z-index: 100;}
+    97% { visibility: hidden;z-index: -1;}
+}
+
+
+@-webkit-keyframes dot1-flash {
+    29% {visibility: hidden;z-index: -1;}
+    54% { visibility: visible;z-index:100;}
+    97% { visibility: hidden;z-index: -1;}
+}
+
+@keyframes dot1-flash {
+
+    29% {visibility: hidden;z-index: -1;}
+    54% { visibility: visible;z-index: 100;}
+    97% { visibility: hidden;z-index: -1;}
+}
+
+
+
+
+/*earth*/
+
+
+@-webkit-keyframes earth-flash {
+
+    /*What is listed is what has to be achieved at the % point*/
+
+    0% {width: 0%; z-index: -1;}
+    29% {visibility:hidden; width: 0%; z-index: -1;}
+    40% { visibility:visible; width: 100%; bottom: 7px;z-index: -1;}
+    60% { z-index: 100;}
+    100% {width: 100%;bottom: 7px; z-index: 100;}
+
+}
+
+
+@-moz-keyframes earth-flash {
+
+    0% {width: 0%; z-index: -1;}
+    29% {visibility:hidden; width: 0%; z-index: -1;}
+    40% { visibility:visible; width: 100%; bottom: 7px;z-index: -1;}
+    60% { z-index: 100;}
+    100% {width: 100%;bottom: 7px; z-index: 100;}
+
+}
+
+
+@keyframes earth-flash {
+
+    0% {width: 0%; z-index: -1;}
+    29% {visibility:hidden; width: 0%; z-index: -1;}
+    40% { visibility:visible; width: 100%; bottom: 7px;z-index: -1;}
+    60% { z-index: 100;}
+    100% {width: 100%;bottom: 7px; z-index: 100;}
+
+
+}
+
+
