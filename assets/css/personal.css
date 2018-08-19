@@ -63,6 +63,11 @@ body input, body textarea, body .btn, body button {
 }
 
 
+.btnBlack {
+  -ms-transform: scale(1.2,1.2); /* IE 9 */
+  -webkit-transform: scale(1.2,1.2); /* Chrome, Safari, Opera */
+  transform: scale(1.2,1.2);
+}
 
 blockquote p {
   font-size: 24px;
