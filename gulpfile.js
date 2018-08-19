@@ -3,8 +3,10 @@ var sass = require('gulp-sass');
 // var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
-// var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify');
 var pkg = require('./package.json');
+var streamqueue  = require('streamqueue');
+var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 
 // Set the banner content
@@ -92,25 +94,33 @@ gulp.task('css:minify', function() {
 // CSS
 gulp.task('css', ['css:minify']);
 
-// Minify JavaScript
-gulp.task('js:minify', function() {
-  return gulp.src([
-      './js/*.js',
-      '!./js/*.min.js'
-    ])
+// Concat + Minify JavaScript
+
+gulp.task('js:concat', function() {
+
+  console.log('In js:concat');
+  return streamqueue({ objectMode: true },
+    gulp.src('./assets/js/theme.js'),
+    gulp.src('./assets/js/contact.js'),
+    gulp.src('./assets/js/form.js'),
+    gulp.src('./assets/js/timer.js'),
+    gulp.src('./assets/js/graphic.js')
+
+  )
+    .pipe(concat('personal.js'))
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./js'))
+    .pipe(gulp.dest('./assets/js/mini'))
     .pipe(browserSync.stream());
 });
 
 // JS
-gulp.task('js', ['js:minify']);
+gulp.task('js', ['js:concat']);
 
 // Default task
-gulp.task('default', ['css']);
+gulp.task('default', ['css', 'js:concat']);
 
 // Configure the browserSync task
 gulp.task('browserSync', function() {
@@ -124,5 +134,6 @@ gulp.task('browserSync', function() {
 // Dev task   > gulp dev
 gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./assets/css/personal.css', ['css']);
+  gulp.watch('./assets/js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });

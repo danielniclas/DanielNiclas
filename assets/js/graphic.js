@@ -1,6 +1,8 @@
 
 var app = {};
 
+app.earthSVG = document.getElementById('earth');
+
 app.earthGraphic = '<g id="Layer_3">\n' +
   '\t<g >\n' +
   '\t\t<g>\n' +
@@ -174,6 +176,6 @@ app.earthGraphic = '<g id="Layer_3">\n' +
   '\t</g>\n' +
   '</g>';
 
-app.earthSVG = document.getElementById('earth');
+
 
 app.earthSVG.innerHTML = app.earthGraphic;
