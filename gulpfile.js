@@ -137,3 +137,48 @@ gulp.task('dev', ['browserSync'], function() {
   gulp.watch('./assets/js/*.js', ['js']);
   gulp.watch('./*.html', browserSync.reload);
 });
+
+
+
+gulp.task('test', function(){
+  console.log('In TeST!');
+});
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+// // BrowserSync Reload
+// function browserSyncReload(done) {
+//   browsersync.reload();
+//   done();
+// }
+//
+// // Clean assets
+// function clean() {
+//   console.log('CLEAN')
+// }
+//
+// // CSS task
+// function css() {
+//   console.log('IN CSS')
+// }
+//
+// // Watch files
+// function watchFiles() {
+//   gulp.watch('./assets/css/personal.css', gulp.series(css, browserSyncReload));
+//   gulp.watch('./assets/js/*.js', gulp.series(js, browserSyncReload));
+//   gulp.watch('./*.html', browserSyncReload);
+//
+// }
+//
+//
+// // build
+// gulp.task(
+//   "mook",
+//   gulp.series(clean, gulp.parallel(css, clean))
+// );
+//
+//
+//
+// // watch
+// gulp.task("watch", gulp.parallel(watchFiles, browserSync));
