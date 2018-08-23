@@ -34,14 +34,20 @@ body input, body textarea, body .btn, body button {
     /*white url('../../assets/images/valley1.JPG') no-repeat center;*/
     /*white url('../../assets/images/math.JPG') no-repeat center;*/
     white url('../../assets/images/jup.JPG') no-repeat center;
-
-
     /*white url('../../assets/images/mountains.jpg') no-repeat center;*/
-
 
     background-size: cover;
     background-attachment:fixed;
     /*background-position: 0% 0%;*/
+}
+
+.background-mystory {
+
+  background-image: url(../../assets/images/pinkflowers_sc.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-attachment:fixed;
+  background-position: 80% 0 !important;
 }
 
 .red-shadow {
