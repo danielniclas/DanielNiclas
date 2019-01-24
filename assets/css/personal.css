@@ -221,7 +221,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn, button, input[type="submit"], .button {
-  border-radius: 18px;
+  /*border-radius: 18px;*/
+  border-radius: 0px;
 }
 .btn.btn-lg, button.btn-lg, input[type="submit"].btn-lg, .button.btn-lg {
   border-radius: 24px;
@@ -257,7 +258,8 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input,
 .select-wrap {
-  border-radius: 18px;
+  /*border-radius: 18px;*/
+  border-radius: 0px;
 }
 
 .widget_tag_cloud ul li a {
@@ -1693,10 +1695,11 @@ input[type="button"] {
 }
 
 .progress {
-  border-radius: 18px;
+  border-radius: 0px;
 }
 .progress .progress-bar {
-  border-radius: 18px;
+  /*border-radius: 18px;*/
+  border-radius: 0px;
 }
 
 .progress-bar-primary {
